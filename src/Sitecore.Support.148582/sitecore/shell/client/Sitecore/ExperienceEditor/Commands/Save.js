@@ -39,7 +39,7 @@
             var pipelineContext = ExperienceEditor.getContext().instance || window.top.ExperienceEditor.instance;
             ExperienceEditor.PipelinesUtil.executePipeline(pipelineContext.SavePipeline, function () {
                 ExperienceEditor.PipelinesUtil.executeProcessors(Sitecore.Pipelines.Save, context, function (context) {
-                    ExperienceEditor.setSaveButtonState(context.aborted); 
+                    ExperienceEditor.setSaveButtonState(context.aborted);
                 });
             });
 
